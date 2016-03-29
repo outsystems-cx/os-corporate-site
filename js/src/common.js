@@ -1,4 +1,18 @@
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+/*$(function() {
+    $(".spacer-bg").width(840 - $("span[id*=ListSection]").outerWidth());
+});*/
+
+$(window).load(function() {
+    if ($('a.logo[href^="/nextstep"]').length === 0) {
+        $(".spacer-bg").width(840 - $("span[id*=ListSection]").outerWidth() + 1);
+        $('.navigation-bar').css('background-color', 'transparent');
+    };
+
+
+});
+
 osjs(function(a) {
     var b = document.location.href;
     if (b.indexOf("#") !== -1) {
@@ -80,7 +94,8 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 (function($) {
     var options = $.lazyLoadXT;
 
-    options.forceEvent += 'loadmeeeee';
+    options.forceEvent += ' loadmeeeee';
+    options.forceEvent += ' hover-menu';
     options.edgeY = 200;
 
 })(window.jQuery || window.Zepto);
@@ -170,7 +185,7 @@ $(function() {
     $('.case-studies-detail-new .Header_Nav_Breadcrumb').css('margin-top', 300 - $('.cs-title-box-topbar').height() + 15);
 });
 
-/** adjust header size if no second level menu **/
+/** adjust header size if no second level menu 
 $(function() {
 
     var pathname = window.location.pathname;
@@ -179,10 +194,10 @@ $(function() {
         $('.header-hero-wrapper.page-without-hero').height(70);
     }
 });
+**/
 
 
-
-/** Sticky secando level menu **/
+/** Sticky second level menu **/
 $(document).ready(function() {
 
     var pathname = window.location.pathname;
@@ -217,33 +232,40 @@ $(document).ready(function() {
         $(window).load(fixMenu).scroll(fixMenu);
 
 
-        $('.sub-navigation-bar a').each(function(index, el) {
-            var currEl = $(el);
-
-            if (
-                (pathname === '/platform/' && pathname === currEl.attr('href')) ||
-                (pathname === '/customers/' && pathname === currEl.attr('href')) ||
-                (pathname === '/partners/' && pathname === currEl.attr('href')) ||
-                (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
-                (pathname === '/platform/whats-new-in-platform-9-bali/' && pathname === currEl.attr('href')) ||
-                (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
 
 
-            ) {
-                currEl.addClass('active');
-
-            } else if ((currEl.attr('href') !== '/platform/sap/' &&
-                    currEl.attr('href') !== '/platform/' &&
-                    currEl.attr('href') !== '/customers/' &&
-                    currEl.attr('href') !== '/partners/' &&
-                    currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/' &&
-                    currEl.attr('href') !== '/platform/whats-new-in-platform-9-bali/') &&
-                pathname.indexOf(currEl.attr('href')) !== -1) {
-                currEl.addClass('active');
+        $('.second-level-menu-wrapper .sub-navigation-bar a[href="' + pathname + '"]').addClass('active');
 
 
-            }
-        });
+        /*
+                $('.sub-navigation-bar a').each(function(index, el) {
+                    var currEl = $(el);
+
+                    if (
+                        (pathname === '/platform/' && pathname === currEl.attr('href')) ||
+                        (pathname === '/customers/' && pathname === currEl.attr('href')) ||
+                        (pathname === '/partners/' && pathname === currEl.attr('href')) ||
+                        (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
+                        (pathname === '/platform/whats-new-in-platform-9-bali/' && pathname === currEl.attr('href')) ||
+                        (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
+
+
+                    ) {
+                        currEl.addClass('active');
+
+                    } else if ((currEl.attr('href') !== '/platform/sap/' &&
+                            currEl.attr('href') !== '/platform/' &&
+                            currEl.attr('href') !== '/customers/' &&
+                            currEl.attr('href') !== '/partners/' &&
+                            currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/' &&
+                            currEl.attr('href') !== '/platform/whats-new-in-platform-9-bali/') &&
+                        pathname.indexOf(currEl.attr('href')) !== -1) {
+                        currEl.addClass('active');
+
+
+                    }
+                });
+        */
 
     }
 });
@@ -435,26 +457,26 @@ eventer_Global(messageEvent_Global, function(e) {
                 var isSalesforceDownload = (pathName.indexOf('/salesforce1-vs-outsystems/') !== -1);
 
                 if (isAppContactUS) {
-                    trackEvent('CS - Submit Contact US Apps');
+                    osAnalytics.trackEvent('CS - Submit Contact US Apps');
 
                 } else if (isGlobalContactUS) {
-                    trackEvent('CS - Submit Contact US Global');
+                    osAnalytics.trackEvent('CS - Submit Contact US Global');
 
                 } else if (isOfficeContactUS) {
-                    trackEvent('CS - Submit Contact US Offices');
+                    osAnalytics.trackEvent('CS - Submit Contact US Offices');
 
                 } else if (isVersusLP) {
                     if ((pathName.indexOf('kony') !== -1)) {
-                        trackEvent('LP - Submit Demo Contact Us - Kony LP');
+                        osAnalytics.trackEvent('LP - Submit Demo Contact Us - Kony LP');
 
                     } else if ((pathName.indexOf('mendix') !== -1)) {
-                        trackEvent('LP - Submit Demo Contact Us - Mendix LP');
+                        osAnalytics.trackEvent('LP - Submit Demo Contact Us - Mendix LP');
 
                     } else if ((pathName.indexOf('appcelerator') !== -1)) {
-                        trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
+                        osAnalytics.trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
 
                     } else if (isSalesforceDownload) {
-                        trackEvent('LP - Download collateral', {
+                        osAnalytics.trackEvent('LP - Download collateral', {
                             'Document': 'OutSystems Platform and Force.com'
                         }, null);
                     }
@@ -574,6 +596,23 @@ $(function() {
     }, 1000);
 
 
+});
+
+
+/** WISITA RESPONSIVE VIDEOS */
+$(function() {
+    if (location.pathname !== '/') {
+
+        try {
+            wistiaEmbeds.onFind(function(video) {
+                video.videoFoam(true);
+            });
+
+        } catch (e) {
+
+        }
+
+    }
 });
 
 
@@ -854,8 +893,14 @@ $(document).ready(function() {
 
     initial = $('.navigation-bar li[class*="active"]');
 
+    //add overlay
+    $('body').append('<div class="overlay"></div>');
+
     $("[data-option=dropdown-hover]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
+
+        $(window).trigger('hover-menu');
+
         var b = $(this),
             menuName = $(b).attr("data-name"),
             c = $("[data-dropdown-wrapper='" + menuName + "']");
@@ -878,15 +923,11 @@ $(document).ready(function() {
     });
 
 
-
-
-
-
 });
 
 var mkto_resized = false;
 $(document).ready(function() {
-        //marketo iframe width resize for iphone cases when width is 100%
+    //marketo iframe width resize for iphone cases when width is 100%
     if ($.browser.mobile) {
         $('#mkto_frame').bind('load', function() {
             if ($(this).css('width') !== undefined && $(this)[0].style.width === '100%' || $('.video-container #mkto_frame') !== undefined) {
