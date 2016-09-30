@@ -742,6 +742,6 @@
             var video = new Whitewater(canvas, source, options);
         } else {
             //on other devices print Video    
-            var videoOut = document.write('<video id="interface" autoplay="" loop=""><source src="' + videoSource + '" type="video/mp4"></video>');
+            var videoOut = document.write('<video id="' + id + '" autoplay="" loop=""><source src="' + videoSource + '" type="video/mp4"></video>');
         }
     }
