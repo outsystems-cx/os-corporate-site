@@ -263,7 +263,7 @@
                             var frameData = [];
 
                             if (frame !== "") {
-                                var map = String(frame).match(/.{1,5}/g);
+                                var map = frame.match(/.{1,5}/g);
                                 var mapLength = map.length;
 
                                 for (var j = 0; j < mapLength; j++) {
@@ -277,7 +277,7 @@
                             videoData.push(frameData);
                         }
 
-                        postMessage(videoData, "*");
+                        postMessage(videoData);
                     };
 
                     function toBase10(val) {
