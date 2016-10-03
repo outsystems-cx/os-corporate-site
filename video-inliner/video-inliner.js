@@ -277,7 +277,7 @@
                             videoData.push(frameData);
                         }
 
-                        postMessage(videoData, *);
+                        postMessage(videoData, "*");
                     };
 
                     function toBase10(val) {
