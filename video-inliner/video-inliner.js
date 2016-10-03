@@ -263,7 +263,7 @@
                             var frameData = [];
 
                             if (frame !== "") {
-                                var map = frame.match(/.{1,5}/g);
+                                var map = String(frame).match(/.{1,5}/g);
                                 var mapLength = map.length;
 
                                 for (var j = 0; j < mapLength; j++) {
