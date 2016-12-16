@@ -231,14 +231,10 @@ $(document).ready(function() {
         };
         $(window).load(fixMenu).scroll(fixMenu);
 
-        if(pathname.indexOf('/case-studies/') !== -1){
-            var firstPath = pathname.split('/')[1];
 
-            $('.second-level-menu-wrapper .sub-navigation-bar a[href^="' + firstPath + '"]').addClass('active');
-        }
-        else {
-            $('.second-level-menu-wrapper .sub-navigation-bar a[href="' + pathname + '"]').addClass('active');
-        }
+
+
+        $('.second-level-menu-wrapper .sub-navigation-bar a[href="' + pathname + '"]').addClass('active');
 
 
         /*
