@@ -1,164 +1,178 @@
-/*
-cache invalidator 
-
-v=201510021536
-*/
 @media screen and (max-width:767px) {
-    .hide-in-mobile {
-        display: none;
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 600
+    }
+    .MenuSlider_Toggler_Overlay,
+    .search-overlay {
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        bottom: 0
     }
     span[id*=ListSection] {
         display: block;
         float: none;
         position: relative;
-        height: 100%;
+        height: 100%
     }
-    .header-hero-wrapper.for-boxes .hero, .header-hero-wrapper.for-slices .hero {
+    .header-hero-wrapper.for-boxes .hero,
+    .header-hero-wrapper.for-slices .hero {
         margin-top: 50px;
         min-height: auto;
-        background-position: 0 0;
+        background-position: 0 0
     }
-    .header-hero-wrapper.for-boxes .navigation-outter, .header-hero-wrapper.for-slices .navigation-outter {
+    .header-hero-wrapper.for-boxes .navigation-outter,
+    .header-hero-wrapper.for-slices .navigation-outter {
         padding-bottom: 0;
         background-color: transparent;
-        border-bottom: none;
+        border-bottom: none
     }
-    .header-hero-wrapper.for-boxes .hero.dark:before, .header-hero-wrapper.for-slices .hero.dark:before {
+    .header-hero-wrapper.for-boxes .hero.dark:before,
+    .header-hero-wrapper.for-slices .hero.dark:before {
         content: "";
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: black;
+        background-color: #000;
         position: absolute;
-        opacity: .3;
+        opacity: .3
     }
-    .header-hero-wrapper.for-boxes .hero.bright:before, .header-hero-wrapper.for-slices .hero.bright:before {
+    .header-hero-wrapper.for-boxes .hero.bright:before,
+    .header-hero-wrapper.for-slices .hero.bright:before {
         content: "";
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: white;
+        background-color: #fff;
         position: absolute;
-        opacity: .3;
+        opacity: .3
     }
     .section.cta {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column
     }
     .section.cta .cta-inner {
         padding: 20px;
-        margin: 0;
+        margin: 0
     }
     .header-hero-wrapper.page-without-hero {
-        padding-bottom: 0px;
-        height: 90px;
+        padding-bottom: 0;
+        height: 90px
     }
     #accord {
-        display: none !important;
+        display: none!important
     }
     .innovation-apply {
-        background: none;
-        background-color: #000;
+        background: #000
     }
     .benefits span.h3 {
         margin-bottom: 15px
     }
     .benefits span.desc {
         min-height: 0;
-        padding: 0 4px 20px 4px;
+        padding: 0 4px 20px
     }
     .benefits .benefit span {
-        font-size: 12px;
-    }
-    .benefits .benefit {
-        margin-bottom: 40px
+        font-size: 12px
     }
     .benefits {
         padding-bottom: 20px
     }
     .benefits .osbtn {
         margin-top: 20px;
+        min-width: 200px
+    }
+    .call-out-hero-home a.osbtn {
+        margin: 12px 0 0!important
+    }
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-bottom: 10px
     }
     .customers-and-experts a span.partner-matrix-entry {
-        width: 90px;
+        width: 90px
     }
     h1 {
         font-size: 30px;
         line-height: 34px;
-        font-weight: 600;
         margin-bottom: 15px
     }
     h2 {
         font-size: 24px;
-        line-height: 28px;
-        font-weight: 600;
-        margin-bottom: 10px
+        line-height: 28px
     }
     h3 {
         font-size: 21px;
-        line-height: 25px;
-        font-weight: 600;
-        margin-bottom: 10px
+        line-height: 25px
     }
     h4 {
         font-size: 18px;
-        line-height: 24px;
-        font-weight: 600;
-        margin-bottom: 10px
+        line-height: 24px
     }
     h5 {
-        font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+        font-family: myriad-pro, Helvetica, Arial, sans-serif;
         font-size: 16px;
         line-height: 22px;
-        font-weight: 400;
-        margin-bottom: 10px
+        font-weight: 400
     }
-
-    /**PartnersMobile*/
     .HeroPartnersPage {
-        background: none;
+        background: 0 0;
         color: #333;
         top: 0PX;
         width: 100%;
         height: auto;
-        padding-bottom: 15px;
+        padding-bottom: 15px
     }
     .HeroPartnersPageTitle {
-        color: #333;
+        color: #333
     }
     .PartnerPageSubtitle {
         text-align: left;
         padding-left: 15px;
-        font-size: 14px !important;
-        padding-right: 15px;
+        font-size: 14px!important;
+        padding-right: 15px
     }
     .PartnerImage {
         width: 100px;
-        display: inline-block !important;
-        vertical-align: top !important;
-        padding-top: 5px !important;
-        padding-bottom: 25px;
+        display: inline-block!important;
+        vertical-align: top!important;
+        padding-top: 5px!important;
+        padding-bottom: 25px
     }
     .Partner {
-        text-align: center;
+        text-align: center
     }
     .PartnersPagination {
         padding-top: 20px;
-        text-align: center !important;
+        text-align: center!important
     }
     .header-hero-wrapper.customers-sublevel-menu {
-        height: 50px;
+        height: 50px
     }
-
-    /**PartnersMobile end*/
     .mobile-only {
         display: block
     }
+    .banner,
+    .hide-in-mobile,
+    .logos,
+    .navigation-bar,
+    .navigation-items,
+    .navigation-longtail .span1,
+    .navigation-longtail-end,
+    .sub-navigation-bar {
+        display: none
+    }
     .header-hero-wrapper {
         padding-top: 0
+    }
+    .navigation-inner {
+        margin-top: 0
     }
     .navigation-outter {
         position: fixed;
@@ -168,20 +182,11 @@ v=201510021536
     .MenuSlider_IsOpen .navigation-outter {
         height: 100%
     }
+    .header-hero-wrapper.home .navigation-bar-tail-logo,
     .navigation-bar-tail-logo {
-        margin-left: 0
-    }
-    .navigation-bar {
-        display: none
-    }
-    .navigation-longtail .span1 {
-        display: none
-    }
-    .navigation-items {
-        display: none
-    }
-    .navigation-longtail-end {
-        display: none
+        margin-left: 15px;
+        margin-top: 7px;
+        padding: 5px 0
     }
     .navigation-longtail {
         height: 50px;
@@ -192,6 +197,10 @@ v=201510021536
         z-index: 10;
         background-color: #000;
         box-shadow: 0 0 10px 0 #000
+    }
+    .header-hero-wrapper.home .navigation-longtail,
+    .navigation-longtail {
+        margin-top: 0
     }
     .navigation-bar-tail-spacer {
         width: 100%
@@ -211,14 +220,11 @@ v=201510021536
     }
     .hero-list {
         width: 292px;
-        margin: 0 auto;
-        font-size: 20px;
-        margin-bottom: 20px
+        margin: 0 auto 20px;
+        font-size: 20px
     }
     .header-hero-wrapper.home {
-        background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile);
-        height: 535px;
-        box-shadow: inset 0 -14px 10px -8px #CFCFCF
+        height: 535px
     }
     .osbtn-lg {
         padding: 10px 30px
@@ -227,16 +233,14 @@ v=201510021536
         padding-top: 50px;
         background-position: center;
         background-image: url(/cms_backoffice/assets/20151215163525/bg-mobile.jpg);
-        background-size: cover;
+        background-size: cover
     }
     .call-out-hero-home .highlight {
-        min-height: 300px;
+        min-height: 300px
     }
     .lead {
         height: auto
     }
-
-    /*get-started*/
     .hero-section-get-started {
         background-image: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile);
         padding-top: 30px;
@@ -248,8 +252,7 @@ v=201510021536
     }
     .getstarted-what-u-get {
         width: 100%;
-        padding: 0 20px;
-        padding-top: 20px;
+        padding: 20px 20px 0;
         height: 100%;
         box-sizing: inherit
     }
@@ -262,73 +265,56 @@ v=201510021536
         margin: 0 auto
     }
     .getstarted-what-cols {
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-left: auto!important;
+        margin-right: auto!important;
         margin-bottom: 30px;
         float: none;
         clear: both
     }
     .pad-fix {
-        padding-top: 0 !important
+        padding-top: 0!important
     }
     .margin-top-fix {
-        margin-top: 0 !important
-    }
-
-    /** about section **/
-    .sub-navigation-bar {
-        display: none
+        margin-top: 0!important
     }
     .header-hero-wrapper.page-company {
         height: 50px;
-        background: none
+        background: 0 0
     }
     .header-hero-wrapper.case-studies-category.page-company {
-        height: 0px;
+        height: 0
+    }
+    .col-back,
+    .management-box {
+        height: auto!important
     }
     .webinar-list-content {
         width: auto;
         margin-left: 0;
         margin-top: 10px
     }
-    .management-box {
-        height: auto !important
-    }
     .career-caption-wrapper {
         margin-top: 0;
         position: relative
     }
     .col-back {
-        height: auto !important;
         margin-bottom: 10px;
         padding-bottom: 10px
     }
     #careers-top {
-        margin-top: 0 !important;
+        margin-top: 0!important;
         margin-bottom: -30px
     }
     .careers-breadcrumb {
-        margin-top: 0px;
+        margin-top: 0
     }
-    .logos {
-        display: none
-    }
-    .hide-in-mobile {
-        display: none
-    }
-
-    /** customers **/
     .header-hero-wrapper.customers-hero {
         height: 0;
         margin-top: 50px
     }
-    .banner {
-        display: none
-    }
     .customers-industry-title {
         padding-left: 0;
-        background: none;
-        background-color: #999;
+        background: #999;
         height: 50px
     }
     .customers-industry-title h5 {
@@ -336,7 +322,8 @@ v=201510021536
         color: #fff;
         line-height: 50px
     }
-    .customer-matrix-entry-nodetail img, .customer-matrix-entry img {
+    .customer-matrix-entry img,
+    .customer-matrix-entry-nodetail img {
         width: 108px;
         height: auto
     }
@@ -344,33 +331,25 @@ v=201510021536
         padding-left: 20px;
         text-align: center
     }
-    .case-studies-content {
-        margin-top: 80px
-    }
     .customers-matrix-entry-details {
         margin-bottom: 10px
     }
     .cs-banner.casestudy {
-        background-size: cover !important;
+        background-size: cover!important;
         background-position: center;
         min-width: 100%;
         width: 100%;
-        height: 325px
+        height: 325px;
+        opacity: .9
     }
+    .cs-title-box,
     .header-hero-wrapper.case-studies-detail-new {
         height: 325px
-    }
-    .cs-title-box {
-        height: 325px
-    }
-    .cs-title-box-topbar {
     }
     .cs-title-box-h-wrapper {
         min-height: 130px;
         padding: 20px 40px;
         width: auto
-    }
-    .cs-title-box-botbar {
     }
     .cs-title-box-h-wrapper h1 {
         font-size: 21px
@@ -409,41 +388,39 @@ v=201510021536
     }
     .case-studies-list-summary {
         max-width: 220px;
-        margin: 0 auto;
+        margin: 0 auto
     }
     .main-quote-background {
         min-height: 165px;
-        height: 100% !important
+        height: 100%!important
     }
     .main-quote-background:after {
-        top: 20px !important
+        top: 20px!important
     }
-
-    /** search **/
     .search-overlay {
         top: 0;
         left: 0;
-        bottom: 0;
         right: 0;
         position: fixed;
         display: none;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         z-index: 99999
     }
     .mobile-search-bar {
-        height: 50px;
+        height: 30px;
+        margin: 10px;
         background-color: #000;
         line-height: 50px;
-        vertical-align: middle
+        vertical-align: middle;
+        border-bottom: 1px solid #969494
     }
     .mobile-search-body-overlay {
         background-color: gray;
-        opacity: .3;
+        opacity: .5;
         height: 100%;
         width: 100%
     }
     input.search {
-        background-color: #3F3F3F;
+        background-color: transparent;
         border: 0;
         border-radius: 3px;
         padding: 5px;
@@ -453,10 +430,10 @@ v=201510021536
         font-size: 16px
     }
     .mobile-search-input {
-        margin-top: 15px;
+        margin-top: 7px;
         position: absolute;
         right: 90px;
-        left: 15px
+        left: 7px
     }
     .mobile-search-cancel a {
         color: #CCC;
@@ -464,26 +441,28 @@ v=201510021536
         text-decoration: none
     }
     .mobile-search-cancel {
-        width: 90px;
+        right: 35px;
+        top: -7px;
         position: absolute;
         display: inline-block;
         text-align: center;
-        right: 0
+        width: 0
     }
     .mobile-body-no-scroll {
         overflow: hidden;
         position: fixed;
-        width: 100%;
+        width: 100%
     }
     .MenuSlider_Toggler {
         display: inline-block;
-        top: 0;
+        top: -10px;
+        padding-top: 12px;
         right: 0;
         width: 50px;
         text-align: center
     }
     .Menu_Container {
-        margin-bottom: 44px;        /* iphone bottom toolbar */
+        margin-bottom: 44px;
         width: 100%
     }
     .Application_Menu {
@@ -494,19 +473,17 @@ v=201510021536
         width: 100%;
         height: 100%;
         overflow: hidden;
-        padding-left: 45px;        /* Animate the menu when opening and closing */
-        transition: all .3s ease-out;        /* Enable hardware acceleration */
+        padding-left: 45px;
+        transition: all .3s ease-out;
         -webkit-transform: translateZ(0);
-        transform: translateZ(0);        /* reduce animation flickering */
+        transform: translateZ(0);
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-perspective: 1000;
         -ms-perspective: 1000;
         perspective: 1000px;
-        font-family: 'myriad-pro', "Helvetica Neue", Helvetica, Arial, sans-serif
-    }
-    .Header .Application_Menu {
+        font-family: myriad-pro, "Helvetica Neue", Helvetica, Arial, sans-serif
     }
     .LeftMenu .Application_Menu {
         left: -270px
@@ -515,11 +492,12 @@ v=201510021536
         right: -45px;
         z-index: 2
     }
+    .MenuSlider_IsOpen .Application_Menu .MenuSlider_Toggler {
+        display: none
+    }
     .MenuSlider_IsOpen .LeftMenu .Application_Menu {
         left: 0
     }
-
-    /* fix for older versions of android */
     .MenuSlider_IsOpen select {
         z-index: 0
     }
@@ -529,17 +507,18 @@ v=201510021536
         margin: 0;
         padding: 0
     }
-
-    /* the "body >" rule applies only when in design mode, directy on the web block menu */
-    body > div.Application_Menu .Menu_DropDownButton, .Application_Menu .Menu_DropDownButton {
+    .Application_Menu .Menu_DropDownButton,
+    body>div.Application_Menu .Menu_DropDownButton {
         display: block;
         position: relative
     }
-    .Application_Menu a, .Application_Menu a:link, .Application_Menu a:visited {
+    .Application_Menu a,
+    .Application_Menu a:link,
+    .Application_Menu a:visited {
         display: inline-block;
         width: 100%;
         border: 0;
-        border-bottom: 1px solid #262626;
+        border-bottom: 1px solid #596669;
         box-sizing: border-box;
         font-size: 16px;
         position: relative
@@ -549,28 +528,27 @@ v=201510021536
         border: 0;
         margin: 0;
         padding: 0;
-        background-color: #262626;
+        background-color: #263238;
         box-shadow: none;
         border-bottom: 0
     }
-    .Application_Menu .Menu_DropDownPanel a, .Application_Menu .Menu_DropDownPanel a:link, .Application_Menu .Menu_DropDownPanel a:visited {
-        border-bottom: 1px solid #3A3A3A
+    .Application_Menu .Menu_DropDownPanel a,
+    .Application_Menu .Menu_DropDownPanel a:link,
+    .Application_Menu .Menu_DropDownPanel a:visited {
+        border-bottom: none
     }
-    .Application_Menu .Menu_DropDownArrow {
+    .Application_Menu .Menu_DropDownArrow .osicon-arrow-down:before,
+    .Application_Menu .Menu_DropDownArrow .osicon-arrow-up:before {
         position: absolute;
-        right: 120px;
-        top: 21px
+        left: 7px;
+        top: -2px
     }
-
-    /* create an overlay so that you can close the menu on click (body) */
     .MenuSlider_Toggler_Overlay {
         top: 0;
         left: 0;
-        bottom: 0;
         right: 0;
         position: fixed;
-        display: none;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+        display: none
     }
     .MenuSlider_Toggler_Overlay2 {
         height: 100%;
@@ -606,8 +584,6 @@ v=201510021536
     .wrap-link {
         width: 100%
     }
-
-    /** landings **/
     .lp-heading {
         font-size: 30px;
         line-height: 34px;
@@ -631,15 +607,11 @@ v=201510021536
         opacity: 1
     }
     .pxs_prev {
-        background: url(/cms_backoffice/assets/201510021536/icons);
-        background-repeat: no-repeat;
-        background-position: -20px -2037px;
+        background: url(/cms_backoffice/assets/201510021536/icons) -20px -2037px no-repeat;
         left: -10px
     }
     .pxs_next {
-        background: url(/cms_backoffice/assets/201510021536/icons);
-        background-repeat: no-repeat;
-        background-position: -20px -2107px;
+        background: url(/cms_backoffice/assets/201510021536/icons) -20px -2107px no-repeat;
         right: -10px
     }
     .how-first-section {
@@ -650,8 +622,6 @@ v=201510021536
     }
     .how-bg-gray-light {
         background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile)
-    }
-    .case-study-title-image img {
     }
     .pricing-feature-image {
         float: left;
@@ -672,17 +642,20 @@ v=201510021536
         background-size: cover;
         margin-top: 15px
     }
-    .case-study-customer-testimonial > h3 {
+    .case-study-customer-testimonial>h3 {
         font-size: 17px;
         line-height: 20px;
         min-height: 115px
     }
     .case-study-customer-logo {
-        position: relative !important;
+        position: relative!important;
         text-align: center;
         margin-bottom: 10px
     }
-    .case-study-title-video-link, .case-study-title-video-link:link, .case-study-title-video-link:hover, .case-study-title-video-link:visited {
+    .case-study-title-video-link,
+    .case-study-title-video-link:hover,
+    .case-study-title-video-link:link,
+    .case-study-title-video-link:visited {
         position: relative;
         display: inline-block;
         bottom: 0;
@@ -694,27 +667,23 @@ v=201510021536
         right: -10px;
         top: -278px
     }
-    .innovation-submission-project-step1 {
-        margin-left: 0px;
-        background-size: 20px;
-        height: auto;
-    }
+    .innovation-submission-project-step1,
     .innovation-submission-project-step2 {
-        margin-left: 0px;
+        margin-left: 0;
         background-size: 20px;
-        height: auto;
+        height: auto
     }
     .innovation-submission-project-steps-content {
         display: inline-block;
         left: 30px;
-        top: 0px;
+        top: 0
     }
-    div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimonial > div.case-study-customer-logo {
-        position: relative !important;
+    div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial>div.case-study-customer-logo {
+        position: relative!important;
         float: right;
         margin-top: 10px
     }
-    div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimonial > h3 {
+    div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial>h3 {
         min-height: 0
     }
     .cs-title-box-h-wrapper h1 {
@@ -725,62 +694,46 @@ v=201510021536
         position: relative;
         top: 0;
         margin-left: 0;
-        margin-right: 0;        /* background: url('/cms_backoffice/assets/201510021536/mobile_solutions_img'); */
-
-        /* background-repeat: no-repeat; */
-
-        /* background-position: right 70px; */
-
+        margin-right: 0;
         width: auto
-
-        /* padding-right: 10px; */
     }
     .submenuhoverbox {
         position: relative;
         padding: 0;
         box-shadow: none;
-        background-color: transparent;
-        background: none;
+        background: 0 0;
         height: 100%;
         z-index: 0
     }
+    .solutions-all-box .text-block,
+    .solutions-all-box .top-image {
+        padding-left: 15px;
+        padding-right: 15px
+    }
     .submenuhoverbox.solutions {
-        margin-top: 80px;
+        margin-top: 80px
     }
     .submenuhoverbox-firstcontent {
-        margin: 0;
-        float: none;
-        padding-bottom: 30px
+        margin: 0
     }
     .submenuhoverbox-line {
         display: none
     }
     .submenuhoverbox-secondcontent {
-        width: auto;
-        float: none;
-        margin: 0;
-        margin-bottom: 20px
+        margin: 0 0 20px
     }
     .submenuhoverbox-thirdcontent {
         width: auto;
         float: none;
         margin-left: 0
     }
-
-    /** solutions **/
     .solution-all-hero {
         height: 750px;
         background-size: cover;
         padding-top: 50px
     }
     .solutions-all-box .top-image {
-        padding-left: 15px;
-        padding-right: 15px;
         padding-top: 15px
-    }
-    .solutions-all-box .text-block {
-        padding-left: 15px;
-        padding-right: 15px
     }
     #solutions-content .solutions-all-box .logos {
         border-top: 1px solid #ccc;
@@ -856,20 +809,20 @@ v=201510021536
         font-size: 16px;
         text-align: left
     }
-    a.solutions-index-toggler.closed > .osicon-close {
+    a.solutions-index-toggler.closed>.osicon-close {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);        /* Animate the menu when opening and closing */
+        -ms-transform: rotate(45deg);
         transition: all .3s ease-out
     }
-    a.solutions-index-toggler.open > .osicon-close {
+    a.solutions-index-toggler.open>.osicon-close {
         transform: rotate(0);
         -webkit-transform: rotate(0);
         -moz-transform: rotate(0);
         -o-transform: rotate(0);
-        -ms-transform: rotate(0);        /* Animate the menu when opening and closing */
+        -ms-transform: rotate(0);
         transition: all .3s ease-out
     }
     .pull-me-right {
@@ -942,8 +895,15 @@ v=201510021536
         font-size: 0;
         transition-property: -webkit-transform;
         transition-property: transform;
-        transition-timing-function: cubic-bezier(0.33, .66, .66, 1);
+        transition-timing-function: cubic-bezier(.33, .66, .66, 1);
         transition-duration: .5s
+    }
+    .m-carousel-bulleted a,
+    .m-carousel-pagination a {
+        display: inline-block;
+        color: #333;
+        transition: background-color .1s ease-in;
+        text-decoration: none
     }
     .m-carousel-inner>* {
         display: inline-block;
@@ -960,8 +920,8 @@ v=201510021536
     }
     .m-center:not(.m-fluid)>.m-carousel-inner {
         display: inline-block;
-        margin-right: -20000px !important;
-        margin-left: 0 !important
+        margin-right: -20000px!important;
+        margin-left: 0!important
     }
     .m-center:not(.m-fluid)>.m-carousel-inner>* {
         position: relative;
@@ -994,21 +954,18 @@ v=201510021536
     }
     .m-carousel-bulleted a {
         line-height: 0;
-        text-decoration: none;
         text-indent: -999px;
         overflow: hidden;
-        display: inline-block;
         padding: 6px;
         width: 0;
         height: 0;
         margin: 0 3px;
-        color: #333;
         background-color: rgba(255, 255, 255, .3);
-        transition: background-color .1s ease-in;
         box-shadow: inset rgba(0, 0, 0, .25) 0 1px 2px;
         border-radius: 6px
     }
-    .m-carousel-bulleted a:focus, .m-carousel-bulleted a:hover {
+    .m-carousel-bulleted a:focus,
+    .m-carousel-bulleted a:hover {
         text-decoration: none;
         background-color: rgba(255, 255, 255, .6)
     }
@@ -1020,16 +977,19 @@ v=201510021536
         padding-top: 10px
     }
     .m-carousel-pagination a {
-        text-decoration: none;
-        display: inline-block;
         padding: 3px 10px;
         margin: 1px 0;
-        color: #333;
         background-color: rgba(255, 255, 255, .3);
-        transition: background-color .1s ease-in;
         border-radius: 2px
     }
-    .m-carousel-pagination a:focus, .m-carousel-pagination a:hover {
+    .m-carousel-hud a,
+    .m-carousel-hud a:after {
+        display: block;
+        height: 50px;
+        position: absolute
+    }
+    .m-carousel-pagination a:focus,
+    .m-carousel-pagination a:hover {
         text-decoration: none;
         background-color: rgba(255, 255, 255, .6)
     }
@@ -1042,11 +1002,8 @@ v=201510021536
     .m-carousel-hud a {
         z-index: 2;
         opacity: 0;
-        display: block;
-        position: absolute;
         top: 50%;
         width: 50px;
-        height: 50px;
         margin: -25px 0 0;
         padding: 0;
         text-decoration: none;
@@ -1057,10 +1014,16 @@ v=201510021536
         transition: opacity .1s ease-in;
         border-radius: 25px
     }
+    .apps-body h2,
+    .apps-top,
+    .m-fluid .m-item {
+        margin-bottom: 0
+    }
     .m-carousel:hover .m-carousel-hud a {
         opacity: .3
     }
-    .m-carousel .m-carousel-hud a:focus, .m-carousel .m-carousel-hud a:hover {
+    .m-carousel .m-carousel-hud a:focus,
+    .m-carousel .m-carousel-hud a:hover {
         opacity: 1
     }
     .m-carousel-hud a:after {
@@ -1070,12 +1033,9 @@ v=201510021536
         font-weight: 700;
         text-indent: 0;
         text-align: center;
-        display: block;
-        position: absolute;
         top: 10px;
         left: 0;
         width: 47px;
-        height: 50px;
         z-index: 9
     }
     .m-carousel-hud .m-carousel-prev {
@@ -1098,20 +1058,15 @@ v=201510021536
     .m-scaled .m-item {
         opacity: .7;
         -webkit-backface-visibility: hidden;
-        -webkit-transform: scale(0.75);
-        transform: scale(0.75);
-        -webkit-transition: -webkit-transform cubic-bezier(0.33, .66, .66, 1) .25s, opacity ease-out .25s;
-        transition-timing-function: transform cubic-bezier(0.33, .66, .66, 1) .25s, opacity ease-out .25s
+        -webkit-transform: scale(.75);
+        transform: scale(.75);
+        -webkit-transition: -webkit-transform cubic-bezier(.33, .66, .66, 1) .25s, opacity ease-out .25s;
+        transition-timing-function: transform cubic-bezier(.33, .66, .66, 1) .25s, opacity ease-out .25s
     }
     .m-scaled .m-active {
         opacity: 1;
         -webkit-transform: scale(1);
         transform: scale(1)
-    }
-    .m-fluid .m-item {
-        margin-bottom: 0
-    }
-    .m-carousel-photos {
     }
     .m-carousel-photos .m-item>img {
         margin: 0;
@@ -1131,7 +1086,8 @@ v=201510021536
         width: 100%;
         box-sizing: border-box
     }
-    .m-card-dark, .m-card-light {
+    .m-card-dark,
+    .m-card-light {
         padding: 20px;
         border-radius: 6px;
         -o-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
@@ -1146,7 +1102,8 @@ v=201510021536
         background: rgba(255, 255, 255, .9);
         color: #000
     }
-    .m-card-dark .m-caption, .m-card-light .m-caption {
+    .m-card-dark .m-caption,
+    .m-card-light .m-caption {
         margin: 0;
         padding: 10px 0 0
     }
@@ -1156,127 +1113,161 @@ v=201510021536
     .apps-top .image-holder {
         position: relative;
         right: 0;
-        top: 0;
-    }
-    .apps-top {
-        margin-bottom: 0;
+        top: 0
     }
     .header-hero-wrapper.apps-home-hero {
-        margin-top: 80px;
+        margin-top: 80px
     }
-    .osicon-arrow-down.apps-icon-toggle, .osicon-arrow-up.apps-icon-toggle {
+    .osicon-arrow-down.apps-icon-toggle,
+    .osicon-arrow-up.apps-icon-toggle {
         display: table-cell;
         position: absolute;
         right: 0;
-        top: 5px;
+        top: 5px
     }
     .apps-body h2 {
         font-size: 21px;
         display: inline-block;
         position: relative;
         width: 100%;
-        color: #0088cc;
-        cursor: pointer;
+        color: #08c;
+        cursor: pointer
     }
-    .apps-mobile-toggle-sales, .apps-mobile-toggle-intra {
-        display: none;
+    .apps-mobile-toggle-intra,
+    .apps-mobile-toggle-sales {
+        display: none
     }
-    .apps-body h2 {
-        margin-bottom: 0;
-    }
-    .apps-body {
-        padding-top: 20px;
-        border-top: 1px solid #C2C2C2;
-    }
-    .header-hero-wrapper {
-    }
-    .submenuhoverbox-firstcontent.light-back a, .submenuhoverbox-secondcontent.mobile-back a {
-        padding-left: 100px;
-    }
-    .submenuhoverbox-firstcontent {
-        display: inline-block;
-        text-align: left;
-        width: 100%;
-        margin-left: 0;
-        float: none;
-        margin-top: 0;
-        background-position: 0px 33px;
-        background-size: 90px auto;
-        margin-top: -30px;
-        padding-bottom: 0;
-        margin-bottom: -20px;
-    }
+    .submenuhoverbox-firstcontent,
     .submenuhoverbox-secondcontent {
         display: inline-block;
         text-align: left;
-        width: 100%;
         margin-left: 0;
         float: none;
+        width: 100%
+    }
+    .apps-body {
+        padding-top: 20px;
+        border-top: 1px solid #C2C2C2
+    }
+    .submenuhoverbox-firstcontent.light-back a,
+    .submenuhoverbox-secondcontent.mobile-back a {
+        padding-left: 100px
+    }
+    .submenuhoverbox-firstcontent {
+        background-position: 0 33px;
+        background-size: 90px auto;
+        margin-top: -30px;
+        padding-bottom: 0;
+        margin-bottom: -20px
+    }
+    .submenuhoverbox-secondcontent {
         margin-top: 0;
         background-position: -2px 16px;
-        background-size: 95px auto;
+        background-size: 95px auto
     }
-    .call-out-hero-home .featured {
-        display: none;
-    }
+    .benefits h2,
+    .call-out-hero-home .featured,
+    .photo-quotes,
+    .second-level-menu-wrapper,
     .what-is-it {
-        display: none;
+        display: none
     }
     h1.slogan {
-        margin-top: 20px;
+        margin: 20px 5px;
+        font-size: 40px;
+        line-height: 40px
     }
     h3.description {
-        padding-top: 10px;
+        padding: 10px;
+        font-size: 22px
     }
     .call-out-hero-home a.osbtn.osbtn-red.popup_link {
-        margin-bottom: 0;
-    }
-    .benefits h2 {
-        display: none;
+        margin-bottom: 0
     }
     .benefits .benefit {
         width: 100%;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 40px
     }
     .benefits .benefit.bordered {
-        border: none;
-    }
-    .photo-quotes {
-        display: none;
+        border: none
     }
     .customers-and-experts {
-        padding-top: 0;
+        padding-top: 0
     }
     .customers-and-experts img {
-        height: auto !important;
-        width: auto !important;
-    }
-    .second-level-menu-wrapper {
-        display: none;
+        height: auto!important;
+        width: auto!important
     }
     .arch-instructions .parallax {
-        background: none !important;
+        background: 0 0!important
     }
     .customers-and-experts a span.customer-matrix-entry {
-        width: 90px;
+        width: 90px
+    }
+    .SliderList .sidebarfilters {
+        display: none;
+        visibility: hidden
+    }
+    .SliderList .bx-pager-item {
+        height: 100%;
+        width: 100px
+    }
+    .SliderList .bx-wrapper .bx-pager.bx-default-pager a.active,
+    .SliderList .bx-wrapper .bx-pager.bx-default-pager a:hover {
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        background-image: linear-gradient(180deg, #fff 0, #eee 100%);
+        border-radius: 0;
+        box-shadow: inset 0 -1px 3px rgba(0, 0, 0, .5), inset 0 -3px 0 #c20;
+        height: 100%;
+        width: 100px
+    }
+    .SliderList .bx-wrapper .bx-pager.bx-default-pager a.active:before,
+    .SliderList .bx-wrapper .bx-pager.bx-default-pager a:hover:before {
+        border-color: transparent transparent #fdfdfd;
+        border-style: solid;
+        border-width: 13px;
+        content: "";
+        display: block;
+        margin-left: 40px;
+        position: absolute;
+        top: -25px;
+        width: 0;
+        z-index: 999
+    }
+    .CaseStudiesCategoryTitle {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 23px;
+        margin-top: 50px
+    }
+    .SliderList .case-study-quote-container {
+        font-size: 22px;
+        line-height: 29px;
+        font-weight: 400
+    }
+    .SliderList .case-study-quote.span8.OSInline {
+        padding: 15px
+    }
+    .SliderList .case-study-img {
+        display: none
     }
 }
 
-/* Landscape */
 @media only screen and (max-device-width:767px) and (orientation:landscape) {
     .row.InovationCards {
-        padding: 0px 10%;
+        padding: 0 10%
     }
     .benefits span.h3 {
         margin-bottom: 15px
     }
     .benefits span.desc {
         min-height: 0;
-        padding: 0 4px 20px 4px;
+        padding: 0 4px 20px
     }
     .benefits .benefit span {
-        font-size: 12px;
+        font-size: 12px
     }
     .benefits .benefit {
         margin-bottom: 40px
@@ -1285,10 +1276,10 @@ v=201510021536
         padding-bottom: 20px
     }
     .benefits .osbtn {
-        margin-left: 20px;
+        margin-left: 20px
     }
     .customers-and-experts a span.partner-matrix-entry {
-        width: 90px;
+        width: 90px
     }
     div.case-study-landscape-landscape {
         display: block
@@ -1296,44 +1287,40 @@ v=201510021536
     div.case-study-landscape-portrait {
         display: none
     }
-
-    /**PartnersMobile*/
     .HeroPartnersPage {
-        background: none;
+        background: 0 0;
         color: #333;
         top: 0PX;
         width: 100%;
         height: auto;
-        padding-bottom: 15px;
+        padding-bottom: 15px
     }
     .HeroPartnersPageTitle {
-        color: #333;
+        color: #333
     }
     .PartnerPageSubtitle {
         text-align: left;
         padding-left: 15px;
-        font-size: 14px !important;
-        padding-right: 15px;
+        font-size: 14px!important;
+        padding-right: 15px
     }
     .PartnerImage {
         width: 100px;
-        display: inline-block !important;
-        vertical-align: top !important;
-        padding-top: 5px !important;
-        padding-bottom: 25px;
+        display: inline-block!important;
+        vertical-align: top!important;
+        padding-top: 5px!important;
+        padding-bottom: 25px
     }
     .Partner {
-        text-align: center;
+        text-align: center
     }
     .PartnersPagination {
         padding-top: 20px;
-        text-align: center !important;
+        text-align: center!important
     }
     .header-hero-wrapper.customers-sublevel-menu {
-        height: 50px;
+        height: 50px
     }
-
-    /**PartnersMobile end*/
     .magiccontainer {
         margin: 0 auto;
         width: 320px
@@ -1357,7 +1344,7 @@ v=201510021536
         width: auto
     }
     .popup-mobile-back {
-        height: auto !important
+        height: auto!important
     }
     .hero-home-back .span2 {
         width: 150px
@@ -1382,27 +1369,24 @@ v=201510021536
         width: 224px;
         float: left;
         margin-left: 0;
-        margin-right: 5px;
+        margin-right: 5px
     }
 }
 
-/* portrait */
 @media only screen and (max-device-width:767px) and (orientation:portrait) {
+    .innovation-case-study-canitbeyou:after,
     .innovation-case-study-preview:after {
-        bottom: -25px;
-    }
-    .innovation-case-study-canitbeyou:after {
-        bottom: -25px;
+        bottom: -25px
     }
     .benefits span.h3 {
         margin-bottom: 15px
     }
     .benefits span.desc {
         min-height: 0;
-        padding: 0 4px 20px 4px;
+        padding: 0 4px 20px
     }
     .benefits .benefit span {
-        font-size: 12px;
+        font-size: 12px
     }
     .benefits .benefit {
         margin-bottom: 40px
@@ -1411,7 +1395,7 @@ v=201510021536
         padding-bottom: 20px
     }
     .customers-and-experts a span.partner-matrix-entry {
-        width: 90px;
+        width: 90px
     }
     div.case-study-landscape-landscape {
         display: none
@@ -1419,87 +1403,78 @@ v=201510021536
     div.case-study-landscape-portrait {
         display: block
     }
-
-    /**PartnersMobile*/
     .HeroPartnersPage {
-        background: none;
+        background: 0 0;
         color: #333;
         top: 0PX;
         width: 100%;
         height: auto;
-        padding-bottom: 15px;
+        padding-bottom: 15px
     }
     .HeroPartnersPageTitle {
-        color: #333;
+        color: #333
     }
     .PartnerPageSubtitle {
         text-align: left;
         padding-left: 15px;
-        font-size: 14px !important;
-        padding-right: 15px;
+        font-size: 14px!important;
+        padding-right: 15px
     }
     .PartnerImage {
         width: 100px;
-        display: inline-block !important;
-        vertical-align: top !important;
-        padding-top: 5px !important;
-        padding-bottom: 25px;
+        display: inline-block!important;
+        vertical-align: top!important;
+        padding-top: 5px!important;
+        padding-bottom: 25px
     }
     .Partner {
-        text-align: center;
+        text-align: center
     }
     .PartnersPagination {
         padding-top: 20px;
-        text-align: center !important;
+        text-align: center!important
     }
     .header-hero-wrapper.customers-sublevel-menu {
-        height: 50px;
+        height: 50px
     }
-
-    /**PartnersMobile end*/
 }
 
-/**to fix companie logos position on website*/
 @media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
         bottom: 10px
     }
-
-    /**PartnersMobile*/
     .HeroPartnersPage {
-        background: none;
+        background: 0 0;
         color: #333;
         top: 0PX;
         width: 100%;
         height: auto;
-        padding-bottom: 15px;
+        padding-bottom: 15px
     }
     .HeroPartnersPageTitle {
-        color: #333;
+        color: #333
     }
     .PartnerPageSubtitle {
         text-align: left;
         padding-left: 15px;
-        font-size: 14px !important;
-        padding-right: 15px;
+        font-size: 14px!important;
+        padding-right: 15px
     }
     .PartnerImage {
         width: 100px;
-        display: inline-block !important;
-        vertical-align: top !important;
-        padding-top: 5px !important;
-        padding-bottom: 25px;
+        display: inline-block!important;
+        vertical-align: top!important;
+        padding-top: 5px!important;
+        padding-bottom: 25px
     }
     .Partner {
-        text-align: center;
+        text-align: center
     }
     .PartnersPagination {
         padding-top: 20px;
-        text-align: center !important;
+        text-align: center!important
     }
     .header-hero-wrapper.customers-sublevel-menu {
-        height: 50px;
+        height: 50px
     }
-
-    /**PartnersMobile end*/
 }
