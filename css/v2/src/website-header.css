@@ -1,7 +1,15 @@
-.navigation-bar-section,
-.navigation-items {
+.navigation-bar-section{
     float: left;
     height: 55px
+}
+
+.navigation-items {
+    font-family: myriad-pro, Arial, sans-serif;
+    height: 50px;
+    float: right;
+    opacity: 1;
+    visibility: initial;
+    transition: all .5s ease
 }
 
 .navigation-longtail,
@@ -12,10 +20,6 @@
 
 .header-hero-wrapper.home .navigation-longtail {
     margin-top: 20px
-}
-
-.header-hero-wrapper.home .navigation-bar-tail-logo {
-    padding: 8px 0
 }
 
 .header-hero-wrapper.home .navigation-outter {
@@ -126,8 +130,10 @@ span[id*=ListSection] {
 }
 
 .navigation-bar li {
-    height: 53px;
-    margin-top: 18px
+    height: 47px;
+    margin-top: 18px;
+    border-bottom: 3px solid transparent;
+    z-index: 10000
 }
 
 .header-hero-wrapper:not(.home) .navigation-bar li {
@@ -224,8 +230,8 @@ body.mega-menu .solution-all-hero .navigation-outter {
 }
 
 .navigation-bar-tail-logo {
-    margin-left: -55px;
-    padding: 5px 0
+    max-width: none;
+    padding: 7px 0
 }
 
 ul.navigation-bar {
@@ -236,7 +242,7 @@ ul.navigation-bar {
     -ms-flex-line-pack: justify;
     -webkit-align-content: space-between;
     align-content: space-between;
-    width: 840px;
+    width: 740px;
     box-sizing: border-box
 }
 
