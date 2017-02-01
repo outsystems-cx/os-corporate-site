@@ -1,4 +1,4 @@
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     h1,
     h2,
     h3,
@@ -7,8 +7,7 @@
     }
     .MenuSlider_Toggler_Overlay,
     .search-overlay {
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-        bottom: 0
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
     }
     span[id*=ListSection] {
         display: block;
@@ -87,7 +86,7 @@
         min-width: 200px
     }
     .call-out-hero-home a.osbtn {
-        margin: 12px 0 0!important
+        margin: 20px 0 0!important
     }
     h2,
     h3,
@@ -111,15 +110,29 @@
         font-size: 21px;
         line-height: 25px
     }
+    .call-out-hero-ad h3 {
+        padding: 10px;
+        font-size: 16px
+    }
     h4 {
         font-size: 18px;
         line-height: 24px
     }
+    .what-is-os h3,
+    h5 {
+        font-weight: 400
+    }
     h5 {
         font-family: myriad-pro, Helvetica, Arial, sans-serif;
         font-size: 16px;
-        line-height: 22px;
-        font-weight: 400
+        line-height: 22px
+    }
+    .container.header {
+        background: #000;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box
     }
     .HeroPartnersPage {
         background: 0 0;
@@ -145,6 +158,11 @@
         padding-top: 5px!important;
         padding-bottom: 25px
     }
+    .mobile-search-bar,
+    input.search {
+        vertical-align: middle;
+        z-index: 1
+    }
     .Partner {
         text-align: center
     }
@@ -158,25 +176,27 @@
     .mobile-only {
         display: block
     }
-    .banner,
-    .hide-in-mobile,
-    .logos,
+    .home .navigation-inner .menu-overlay,
     .navigation-bar,
     .navigation-items,
     .navigation-longtail .span1,
     .navigation-longtail-end,
-    .sub-navigation-bar {
+    .what-is-os .our-customers ul.our-services li:nth-child(3):before {
         display: none
     }
     .header-hero-wrapper {
         padding-top: 0
+    }
+    .header-hero-wrapper.home {
+        background-image: url(/cms_backoffice/assets/20160906152445/imgtop-mock-mob1);
+        background-position: initial;
+        height: auto
     }
     .navigation-inner {
         margin-top: 0
     }
     .navigation-outter {
         position: fixed;
-        z-index: 9999;
         top: 0
     }
     .MenuSlider_IsOpen .navigation-outter {
@@ -184,9 +204,19 @@
     }
     .header-hero-wrapper.home .navigation-bar-tail-logo,
     .navigation-bar-tail-logo {
-        margin-left: 15px;
+        margin-left: 0;
         margin-top: 7px;
         padding: 5px 0
+    }
+    .header-hero-wrapper .navigation-outter {
+        background: 0;
+        position: fixed!important;
+        width: 100%;
+        z-index: 999
+    }
+    .header-hero-wrapper .navigation-inner {
+        height: 50px;
+        background: #000
     }
     .navigation-longtail {
         height: 50px;
@@ -198,6 +228,12 @@
         background-color: #000;
         box-shadow: 0 0 10px 0 #000
     }
+    .hero-home-back,
+    .home .call-out-hero-home .align-bottom,
+    .home .call-out-hero-home .hero-home-buttons,
+    .home .call-out-hero-home .title-subtitle {
+        position: relative
+    }
     .header-hero-wrapper.home .navigation-longtail,
     .navigation-longtail {
         margin-top: 0
@@ -207,7 +243,6 @@
     }
     .hero-home-back {
         background-image: none;
-        position: relative;
         height: 455px
     }
     .hero-home-back h1 {
@@ -223,9 +258,6 @@
         margin: 0 auto 20px;
         font-size: 20px
     }
-    .header-hero-wrapper.home {
-        height: 535px
-    }
     .osbtn-lg {
         padding: 10px 30px
     }
@@ -235,8 +267,368 @@
         background-image: url(/cms_backoffice/assets/20151215163525/bg-mobile.jpg);
         background-size: cover
     }
+    .home .call-out-hero-home .title-subtitle {
+        top: 10%;
+        padding: 10px
+    }
+    .home .call-out-hero-home .hero-home-buttons a.osbtn-red,
+    .home .call-out-hero-home .hero-home-buttons a.osbtn-white {
+        padding: 10px 0;
+        width: 100%
+    }
+    .call-out-hero-home .see-more-arrow {
+        padding-top: 0;
+        background: 0;
+        height: 30px;
+        display: none
+    }
     .call-out-hero-home .highlight {
         min-height: 300px
+    }
+    .what-is-os .animated-section {
+        padding: 40px 0 0
+    }
+    .what-is-os .animated-section .content-box {
+        position: relative;
+        min-height: 200px;
+        padding: 0 10px;
+        text-align: center
+    }
+    .what-is-os .animated-section h2 {
+        margin-bottom: 25px
+    }
+    .what-is-os .animated-section h4 {
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: 10px
+    }
+    .what-is-os .what-can-you-build,
+    .what-is-os .why-we-are-1st {
+        padding: 40px 10px
+    }
+    .what-is-os .what-can-you-build h2 {
+        margin-top: 0;
+        margin-bottom: 25px
+    }
+    .what-is-os .what-can-you-build .description {
+        padding: 10px 20px
+    }
+    .what-is-os .why-we-are-1st .description {
+        font-size: 16px;
+        padding: 5px 20px
+    }
+    .what-is-os .why-we-are-1st h2 {
+        margin: 0
+    }
+    .what-is-os .why-we-are-1st .span3 {
+        margin-bottom: 30px
+    }
+    .what-is-os .what-can-you-build .span3,
+    .why-we-are-1st .span3:last-child {
+        margin-bottom: 0
+    }
+    .what-is-os .why-we-are-1st .row {
+        margin-bottom: 0;
+        margin-top: 30px
+    }
+    .what-is-os .why-we-are-1st .row:first-child {
+        margin-top: 0
+    }
+    .what-is-os .our-customers .description {
+        padding: 10px 5px
+    }
+    .what-is-os .take-the-next-step {
+        background-image: url(/cms_backoffice/assets/20160830143805/bg-blur-mob-blue);
+        padding: 10px
+    }
+    .what-is-os .take-the-next-step>.container {
+        padding: 40px 0
+    }
+    .what-is-os .take-the-next-step .span4 {
+        margin: 40px 0;
+        max-width: none
+    }
+    .what-is-os .take-the-next-step h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px
+    }
+    .what-is-os .take-the-next-step h3 {
+        margin-top: 20px;
+        padding: 0 20px;
+        font-size: 18px
+    }
+    .what-is-os .take-the-next-step .cta-section a.osbtn-red,
+    .what-is-os .take-the-next-step .cta-section a.osbtn-white {
+        margin: 10px 0
+    }
+    .what-is-os .inspiration-video {
+        padding: 40px 5px
+    }
+    .what-is-os .our-customers {
+        padding: 40px 10px
+    }
+    .what-is-os .our-customers .description,
+    .what-is-os .our-customers h2 {
+        text-align: center;
+        margin-bottom: 10px
+    }
+    .what-is-os .our-customers img {
+        padding: 0 5%;
+        max-width: 90%
+    }
+    .what-is-os .our-services {
+        text-align: center;
+        padding: 0 40px
+    }
+    .photo-quotes {
+        padding: 30px 20px;
+        background-image: url(/cms_backoffice/assets/20160830111252/bg-blur-mob-red);
+        background-color: #c20;
+        background-size: cover
+    }
+    .photo-quotes .quote-photo {
+        width: 30%;
+        padding: 5px 10px
+    }
+    .photo-quotes .quote-photo img {
+        float: right
+    }
+    .photo-quotes .quote-info {
+        width: 70%;
+        padding: 15px 0 15px 10px;
+        color: #fff;
+        font-weight: 100;
+        font-size: 14px
+    }
+    .photo-quotes h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 30px
+    }
+    .photo-quotes .quote {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+    .photo-quotes .quote .span12 {
+        margin-bottom: 0
+    }
+    .photo-quotes .quote .span12:last-child {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+    .photo-quotes .m-fluid .m-item {
+        min-height: 290px
+    }
+    .photo-quotes .m-scooch-controls {
+        padding: 0
+    }
+    .photo-quotes .m-scooch-bulleted a {
+        margin: 0 10px;
+        padding: 3px;
+        background-color: rgba(255, 255, 255, .6)
+    }
+    .welcome-to-outsystems .welcome-to-os-hero {
+        bottom: 0
+    }
+    .welcome-to-outsystems a#overview {
+        bottom: 190px;
+        top: auto!important;
+        width: 200px
+    }
+    #footer-wrapper {
+        margin-top: -50px
+    }
+    .platform-page-content .unbeatable-speed .animation,
+    .welcome-to-outsystems .welcome-to-os-nav {
+        display: none
+    }
+    .build-mobile-apps-content>div,
+    .platform-page-content>div,
+    .web-apps-and-portals-content>div,
+    .whats-new-page-content>div {
+        padding: 40px 0;
+        overflow: hidden
+    }
+    .whats-new-page-content .learn-more-cta {
+        font-size: 18px;
+        padding: 0 15px
+    }
+    .whats-new-page-content .sensors-and-more {
+        padding-bottom: 410px;
+        padding-top: 40px
+    }
+    .whats-new-page-content .sensors-and-more img {
+        bottom: -25px
+    }
+    .whats-new-page-content .sophisticated-offline img {
+        width: 100%;
+        padding: 0
+    }
+    .platform-page-content div.learn-more-cta {
+        padding: 0 20px
+    }
+    .platform-page-content .caption {
+        padding: 0 10px!important
+    }
+    .platform-page-content h2 {
+        font-size: 32px;
+        padding: 0 20px!important
+    }
+    .platform-page-content h3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px
+    }
+    .platform-page-content ul {
+        padding: 0 20px 0 40px!important
+    }
+    .platform-page-content .enterprise-grade ul {
+        padding: 0 20px!important;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal
+    }
+    .platform-page-content .enterprise-grade .text,
+    .platform-page-content .great-ux-by-default .scnd-caption {
+        padding: 0
+    }
+    .platform-page-content .great-ux-by-default .span2 {
+        display: flex;
+        padding: 0 10px;
+        margin-bottom: 0
+    }
+    .platform-page-content .great-ux-by-default .description {
+        text-align: left
+    }
+    .platform-page-content .great-ux-by-default .span2 img {
+        width: 100px;
+        height: 100px
+    }
+    .platform-page-content .unbeatable-speed .text {
+        padding: 0
+    }
+    .platform-page-content .integrate-with-everything ul li {
+        padding-right: 0
+    }
+    .platform-page-content .integrate-with-everything .span7 img {
+        padding: 30px 0
+    }
+    .platform-page-content .low-code a {
+        white-space: normal
+    }
+    .platform-page-content .enterprise-grade ul li {
+        margin: 20px auto
+    }
+    .platform-page-content .enterprise-grade .enterprise-grade-facts img {
+        max-width: 320px
+    }
+    .platform-page-content .great-ux-by-default {
+        padding-bottom: 0
+    }
+    .platform-page-content .great-ux-by-default .span12:last-child {
+        margin-bottom: 0
+    }
+    .welcome-to-outsystems .welcome-to-os-title {
+        width: 90%;
+        white-space: normal;
+        top: 100px;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translateX(-50%)
+    }
+    .welcome-to-outsystems .welcome-to-os-title .switcher {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center
+    }
+    .welcome-to-outsystems img.frame,
+    .welcome-to-outsystems img.gif {
+        max-width: 500px
+    }
+    .build-mobile-apps-content .content,
+    .web-apps-and-portals-content .content,
+    .whats-new-page-content .content {
+        padding: 0!important;
+        text-align: center
+    }
+    .whats-new-page-content .ultra-smooth-ux .span7 {
+        min-height: 0!important
+    }
+    .whats-new-page-content img#iphone {
+        right: 0;
+        position: relative;
+        padding-top: 40px;
+        float: right
+    }
+    .whats-new-page-content img#ipad {
+        width: 100%;
+        padding: 0
+    }
+    .whats-new-page-content video#interface {
+        position: absolute;
+        top: 112px;
+        right: 40px;
+        width: 154px;
+        border: 1px solid #c7c2c2
+    }
+    .whats-new {
+        top: 0;
+        margin-top: 80px
+    }
+    .whats-new h1 {
+        font-size: 40px;
+        line-height: 44px
+    }
+    .whats-new .whats-new-video {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: auto
+    }
+    .whats-new .whats-new-hero>.container {
+        width: 90%;
+        top: 0;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0)
+    }
+    .build-mobile-apps .build-mobile-apps-hero>.container {
+        width: 90%;
+        top: 40%
+    }
+    .build-mobile-apps .build-mobile-apps-hero img {
+        position: absolute;
+        bottom: 0;
+        max-width: 130%;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translateX(-50%)
+    }
+    .web-apps-and-portals-content h2 {
+        text-align: center
+    }
+    .build-mobile-apps-content .sophisticated-offline .row,
+    .build-mobile-apps-content .world-class-front-ends .row,
+    .web-apps-and-portals-content .continuous-delivery .row,
+    .whats-new-page-content .sophisticated-offline .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column-reverse
+    }
+    .banner,
+    .hide-in-mobile,
+    .logos,
+    .sub-navigation-bar {
+        display: none
     }
     .lead {
         height: auto
@@ -324,7 +716,6 @@
     }
     .customer-matrix-entry img,
     .customer-matrix-entry-nodetail img {
-        width: 108px;
         height: auto
     }
     .customer-line-wrapper {
@@ -400,6 +791,7 @@
     .search-overlay {
         top: 0;
         left: 0;
+        bottom: 0;
         right: 0;
         position: fixed;
         display: none;
@@ -410,14 +802,16 @@
         margin: 10px;
         background-color: #000;
         line-height: 50px;
-        vertical-align: middle;
-        border-bottom: 1px solid #969494
+        border-bottom: 1px solid #fff
     }
     .mobile-search-body-overlay {
-        background-color: gray;
+        background-color: #000;
+        position: absolute;
         opacity: .5;
-        height: 100%;
-        width: 100%
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0
     }
     input.search {
         background-color: transparent;
@@ -426,14 +820,14 @@
         padding: 5px;
         width: 100%;
         display: table-cell;
-        vertical-align: middle;
         font-size: 16px
     }
     .mobile-search-input {
         margin-top: 7px;
         position: absolute;
         right: 90px;
-        left: 7px
+        left: 7px;
+        z-index: 1
     }
     .mobile-search-cancel a {
         color: #CCC;
@@ -450,7 +844,6 @@
     }
     .mobile-body-no-scroll {
         overflow: hidden;
-        position: fixed;
         width: 100%
     }
     .MenuSlider_Toggler {
@@ -459,7 +852,8 @@
         padding-top: 12px;
         right: 0;
         width: 50px;
-        text-align: center
+        text-align: center;
+        z-index: 99999
     }
     .Menu_Container {
         margin-bottom: 44px;
@@ -546,15 +940,18 @@
     .MenuSlider_Toggler_Overlay {
         top: 0;
         left: 0;
+        bottom: 0;
         right: 0;
         position: fixed;
         display: none
     }
     .MenuSlider_Toggler_Overlay2 {
         height: 100%;
-        margin-left: -50px;
+        margin-left: -45px;
         display: inline-block;
-        width: 100%
+        width: 100%;
+        background: #000;
+        opacity: .7
     }
     .MenuSlider_IsOpen .MenuSlider_Toggler_Overlay {
         display: block
@@ -1167,18 +1564,36 @@
     }
     .benefits h2,
     .call-out-hero-home .featured,
-    .photo-quotes,
-    .second-level-menu-wrapper,
-    .what-is-it {
+    .second-level-menu-wrapper {
         display: none
     }
-    h1.slogan {
-        margin: 20px 5px;
-        font-size: 40px;
-        line-height: 40px
+    div.slogan {
+        margin: 0;
+        font-size: 36px;
+        line-height: 44px
     }
+    div.slogan h3 {
+        margin: 0
+    }
+    div.slogan .words-wrapper {
+        padding-top: 15px;
+        min-height: 105px
+    }
+    div.slogan h3,
+    h3.get-out-subtitle {
+        font-size: 21px;
+        white-space: normal
+    }
+    h3.get-out-subtitle:last-child {
+        font-size: 18px
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     h3.description {
-        padding: 10px;
+        padding: 15px 0;
         font-size: 22px
     }
     .call-out-hero-home a.osbtn.osbtn-red.popup_link {
@@ -1195,15 +1610,8 @@
     .customers-and-experts {
         padding-top: 0
     }
-    .customers-and-experts img {
-        height: auto!important;
-        width: auto!important
-    }
     .arch-instructions .parallax {
         background: 0 0!important
-    }
-    .customers-and-experts a span.customer-matrix-entry {
-        width: 90px
     }
     .SliderList .sidebarfilters {
         display: none;
@@ -1254,8 +1662,7 @@
         display: none
     }
 }
-
-@media only screen and (max-device-width:767px) and (orientation:landscape) {
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
     .row.InovationCards {
         padding: 0 10%
     }
@@ -1372,8 +1779,7 @@
         margin-right: 5px
     }
 }
-
-@media only screen and (max-device-width:767px) and (orientation:portrait) {
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
     .innovation-case-study-canitbeyou:after,
     .innovation-case-study-preview:after {
         bottom: -25px
@@ -1438,8 +1844,7 @@
         height: 50px
     }
 }
-
-@media only screen and (min-device-width:767px) {
+@media only screen and (min-device-width: 767px) {
     .case-study-customer-logo {
         bottom: 10px
     }

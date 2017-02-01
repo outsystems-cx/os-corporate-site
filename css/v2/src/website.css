@@ -977,7 +977,7 @@ a.tooltip-link {
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .28);
     color: #37474f;
-    font-family: Myriad-Pro;
+    font-family:myriad-pro, arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 15px
@@ -3865,7 +3865,7 @@ h1.landing {
 
 #features-table div.triangle:after {
     display: block;
-    display: none\9;
+    display: none\9; /* IE7,8,9*/
     content: "";
     border-color: #fff transparent transparent;
     border-style: solid;
@@ -5112,13 +5112,10 @@ ul.mobile-bullets {
     color: #FFF
 }
 
-.support-box h4 {
-    color: #FFF
-}
-
 .button-isotype,
 .button-isotype.is-checked,
-.support-box a {
+.support-box a,
+.support-box h4 {
     color: #fff
 }
 
@@ -5149,7 +5146,7 @@ h4.bot-line {
     background: #aaa;
     border: none;
     border-radius: 20px;
-    font-family: myriad-pro;
+    font-family:myriad-pro, arial, sans-serif;
     font-size: 14px;
     cursor: pointer
 }
@@ -5688,13 +5685,6 @@ a.past-list-link:visited h5 {
 .getstarted-what-cols,
 .solutions-cta-bar {
     font-family: myriad-pro, Arial, sans-serif
-}
-
-.header-contacts,
-.header-free-trial,
-.header-login,
-.submenuhoverbox ul li a {
-    font-family: myriad-pro, arial, sans-serif
 }
 
 .innovationawards-year a:hover {
@@ -6605,7 +6595,7 @@ div.st-result .st-date {
 
 .swiftype-widget .autocomplete,
 .swiftype-widget .autocomplete ul {
-    font-family: myriad-pro;
+    font-family:myriad-pro, arial, sans-serif;
     background-color: #fff;
     display: block;
     padding: 0;
@@ -7351,7 +7341,7 @@ body.mega-menu .home .navigation-inner {
 
 .secondary-menu a,
 .secondary-menu span {
-    font-family: myriad-pro;
+    font-family:myriad-pro, arial, sans-serif;
     font-size: 13px;
     color: #000;
     padding: 0 15px 5px;
@@ -10527,12 +10517,16 @@ div.Popup.ui-dialog .ui-resizable-ne {
     padding: 20px 5px
 }
 
-
-.platform-page-content h2 {
-    color: #57666f;
-    font-size: 38px;
-    line-height: 44px;
-    margin-bottom: 30px
+.build-mobile-apps-content h2,
+.platform-page-content h2,
+.web-apps-and-portals-content h2,
+.whats-new-page-content h2 {
+    color:#57666f;
+    font-family:myriad-pro, arial, sans-serif;
+    font-size:38px;
+    font-weight:100;
+    line-height:44px;
+    margin-bottom:30px;
 }
 
 .platform-page-content .caption {
@@ -10746,7 +10740,7 @@ div.Popup.ui-dialog .ui-resizable-ne {
 .platform-page-content .great-ux-by-default h2,
 .platform-page-content .unbreakable-deployment .caption,
 .platform-page-content .unbreakable-deployment h2,
-platform-page-content .unbreakable-deployment ul li {
+.platform-page-content .unbreakable-deployment ul li {
     color: #fff
 }
 
@@ -10851,6 +10845,7 @@ platform-page-content .unbreakable-deployment ul li {
 .platform-page-content .great-ux-by-default .animated-section img.scr-1 {
     position: absolute;
     z-index: 1;
+    left: 25px;
     margin: 0 150px
 }
 
@@ -11395,7 +11390,7 @@ platform-page-content .unbreakable-deployment ul li {
     font-size: 34px;
     line-height: 42px;
     font-weight: 400;
-    font-family: myriad-pro;
+    font-family:myriad-pro, arial, sans-serif;
     margin-top: 0;
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -11915,21 +11910,6 @@ li.get-started a {
     visibility: initial
 }
 
-.searchview-content {
-    position: absolute;
-    top: -10px;
-    z-index: 3;
-    width: 100%;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    border: none;
-    border-radius: 3px
-}
-
-.home .searchview-content {
-    height: 200px
-}
-
 .searchview-close {
     opacity: 1;
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieopacity)';
@@ -11960,25 +11940,24 @@ li.get-started a {
 }
 
 .searchform-wrapper {
-    position: relative;
-    z-index: 2;
-    height: 35px;
-    line-height: 35px;
-    width: 73%;
-    padding-left: 0;
-    box-sizing: border-box;
-    margin-top: 52px;
-    border-bottom: 1px solid rgba(255, 255, 255, .49);
-    padding-bottom: 5px;
-    margin-left: 26%;
-    margin-right: 1%
+    position:relative;
+    z-index:2;
+    height:35px;
+    line-height:35px;
+    width:73%;
+    padding-left:0;
+    margin-top:40px;
+    border-bottom:1px solid rgba(255,255,255,.49);
+    padding-bottom:5px;
+    margin-left:26%;
+    margin-right:1%;
 }
 
 input[type=search].searchform-input {
     width: 90%;
     font-size: 22px;
     line-height: 1.375;
-    font-family: myriad-pro;
+    font-family:myriad-pro, arial, sans-serif;
     font-weight: 100;
     letter-spacing: normal;
     height: 35px;
@@ -12873,7 +12852,7 @@ ul {
 .cta-wrapper-footer p,
 .cta-wrapper-footer-clean p,
 .cta-wrapper-footer-home p {
-    font-family: ‘myriad-pro’, Arial, sans-serif;
+    font-family: myriad-pro, Arial, sans-serif;
     font-size: 19px;
     color: #FFF;
     display: inline-block;
